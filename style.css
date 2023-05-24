@@ -48,6 +48,7 @@ nav{
 .nav__list--item button{
     text-decoration: none;
     color: var(--cor-da-fonte);
+    background-color: white ;
     border: none;
     font-size: 1.2rem;
     font-weight: 200;
@@ -106,6 +107,7 @@ nav{
 .banner__text__btn{
     text-align: left;
     color: var(--cor-principal);
+    background-color: #fff;
     border: none;
     font-weight: 400;
     font-size: 1.3rem;;
@@ -135,8 +137,6 @@ nav{
    font-size: 3rem;
    line-height: 3.5rem;
    letter-spacing: 1px;
-
-   
 }
 
 .banner__video--info{
@@ -170,12 +170,13 @@ strong{
 
 .cards__article--title{
     font-size: 1.8rem;
+    line-height: 2.5rem;
     font-weight: bold;
-    width: 50%;
+    width: 60%;
 }
 
 .cards__article--info{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
 }
