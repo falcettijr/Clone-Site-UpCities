@@ -4,7 +4,7 @@ Este é o repositório apenas para fins de estudo de um clone da página da empr
 
 ## Screenshot
 
-![Screenshot UpCities](/assets/screenshot.png#vitrinedev)
+![Screenshot UpCities](assets/screenshot.png#vitrinedev)
 
 ## Instalação
 
