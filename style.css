@@ -28,21 +28,22 @@ nav{
     align-items: center;
     padding: 20px;
     background: #fff;
-    /* z-index: 999px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    z-index: 999px;
     position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
+    width: 100%;
 }
 
 .nav__list{
     display: flex;
-    gap: 30px;   
+    gap: 10px;   
     align-items: center;
+    justify-content: space-around;
     margin-left: 20%;
     font-size: 1.2rem;
     padding: 1px;
-    width: 30%;
+    width: 40%;
 }
 
 .nav__list--item button{
@@ -58,6 +59,7 @@ nav{
     color:  var(--cor-principal);
     text-decoration: underline;
     font-weight: 200;
+    cursor: pointer;
 }
 
 .nav__list--btn{
@@ -69,6 +71,19 @@ nav{
     border-radius: 10px;
     border: 1px var(--cor-principal) solid;
     font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__list--btn:hover{
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-claro);
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px var(--cor-principal) solid;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .nav__logo{
@@ -83,6 +98,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .banner__text{
@@ -316,7 +332,6 @@ strong{
     }
   }
 
-
 .numeros{
     display: flex;
     margin-top: 50px;
@@ -368,13 +383,13 @@ strong{
 input{
     width: 100%;
     border: none; 
-    border-bottom: 1px solid hsl(0, 0%, 23%, 30%) ; 
+    border-bottom: 1px solid hsl(0, 0%, 23%, 40%) ; 
     outline: none; 
     font-size: 1.5rem;  
 }
 
 label{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 select{
@@ -388,6 +403,7 @@ select{
 textarea{
     border: 1px solid hsl(0, 0%, 23%, 30%) ;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 .form{
     margin-top: 50px;
@@ -421,7 +437,6 @@ textarea{
     justify-content: center;
     color: var(--cor-da-fonte);
     width: 100%;
-    gap: 10px;
     font-weight: 300;
     font-size: 1.3rem;
 }
@@ -435,6 +450,8 @@ textarea{
 }
 .cidadeestado{
     display: inline;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 #cidade{
@@ -445,12 +462,16 @@ textarea{
 .form__inputgroup2{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 50%;
     height: 400px;
     margin: 30px;
 }
 
+.form__inputgroup2 button{
+    align-self: flex-end;
+    text-align: center;
+}
 .nomecompleto{
     display: flex;
     flex-direction: column;
@@ -467,14 +488,69 @@ textarea{
     display: flex;
     flex-direction: column;
     margin: 30px 0;  
+
 }
 
-footer{
+.enviar{
+    text-decoration: none;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-principal);
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px var(--cor-principal) solid;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 30%;
+}
+
+.enviar:hover{
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-claro);
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px var(--cor-principal) solid;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 30%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    height: 130px;
     background-color: var(--cor-footer);
-    height: 150px;
 }
 
+.footer__list{
+    display: flex;
+    color: var(--cor-fundo-claro);
+    list-style: none;
+    justify-content: flex-start;
+    gap: 60px;
+    font-size: 1.2rem;
+    
+}
 
+.footer__div{
+    width: 40%;
+}
 
-  
-  
+.footer__zap{
+    width: 40%;
+    font-size: 1.2rem;
+    color: var(--cor-fundo-claro);
+    text-align: right;
+}
+
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#logo__footer{
+    font-size: 1.5rem;
+}
