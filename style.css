@@ -13,7 +13,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; 
+    scroll-behavior: smooth;
 }
 
 body{
@@ -33,6 +34,15 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited{
+    text-decoration: var(--cor-da-fonte);
 }
 
 .nav__list{

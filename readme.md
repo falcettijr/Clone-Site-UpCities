@@ -1,6 +1,6 @@
 # UpCities
 
-Este é o repositório apenas para fins de estudo de um clone da página da empresa UpCities localizada em Vitória/ES feito com HTML e CSS.
+Este é o repositório apenas para fins de estudo de um clone da página da empresa UpCities localizada em Vitória/ES feito por mim Sergio Falcetti, com HTML e CSS.
 
 ## Screenshot
 
@@ -20,16 +20,17 @@ O projeto está estruturado da seguinte forma:
 - `style.css`: arquivo CSS para estilização do site.
 - `assets/`: diretório que contém os recursos utilizados no site, como imagens e ícones.
 
-## Como Contribuir
+## Features
 
-Você pode contribuir para este projeto seguindo as etapas abaixo:
+- Barra de navegação fixa no topo do site.
+- As `sections` divididas individualmente.
+- Formulário no final da página.
+- Slide das features, feito totalmente em HTML, CSS e JS.
+- Links e botões funcionais, para as `sections` correspondentes.
 
-1. Fork este repositório.
-2. Crie uma branch para a sua contribuição: `git checkout -b minha-contribuicao`.
-3. Faça as alterações desejadas no código.
-4. Commit suas alterações: `git commit -m 'Minha contribuição'`.
-5. Push para o branch remoto: `git push origin minha-contribuicao`.
-6. Abra um pull request neste repositório.
+## Pontos a serem melhorados
+
+- Criar o backend com as informações obtidas do formulário.
 
 ## Licença
 
