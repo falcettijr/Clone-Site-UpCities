@@ -21,24 +21,35 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--cor-de-fundo);
     color: var(--cor-da-fonte);
+   
+}
+
+.menu{
+    background-color: var(--cor-principal);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    transition: all .4s;
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1rem 8%;
     background: #fff;
-    z-index: 999px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
-
-a{
-    text-decoration: none;
-    cursor: pointer;
+nav button{
+    display: none;
+    border: none;
+    background: transparent;
 }
 
 a:visited{
@@ -50,28 +61,23 @@ a:visited{
     gap: 10px;   
     align-items: center;
     justify-content: space-around;
-    margin-left: 20%;
     font-size: 1.2rem;
     padding: 1px;
-    width: 40%;
 }
-
-.nav__list--item button{
+.nav__list--item a{
     text-decoration: none;
     color: var(--cor-da-fonte);
     background-color: white ;
     border: none;
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 400;
 }  
-
-.nav__list--item button:hover{
+.nav__list--item a:hover{
     color:  var(--cor-principal);
     text-decoration: underline;
-    font-weight: 200;
+    font-weight: 400;
     cursor: pointer;
 }
-
 .nav__list--btn{
     text-decoration: none;
     background-color: var(--cor-de-fundo);
@@ -83,7 +89,6 @@ a:visited{
     font-size: 1.1rem;
     cursor: pointer;
 }
-
 .nav__list--btn:hover{
     text-decoration: none;
     background-color: var(--cor-principal);
@@ -95,20 +100,18 @@ a:visited{
     font-size: 1.1rem;
     cursor: pointer;
 }
-
 .nav__logo{
     font-size: 2rem ;
-    margin-right: 500px;
     font-weight:500;
     color:var(--cor-principal);
-    margin-left: 80px;
 }
 
 .banner{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 6.25rem;
+    width: 100%;
 }
 
 .banner__text{
@@ -116,7 +119,7 @@ a:visited{
     flex-direction: column;
     text-align: left;
     gap:30px;
-    width: 480px;
+    width: 30rem;
     margin-right: 8%;
 }
 
@@ -156,7 +159,7 @@ a:visited{
 .banner__video--text{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 25rem;
     margin-left: 5%;
     gap: 30px;
 }
@@ -182,33 +185,31 @@ strong{
     margin-bottom: 50px;
     background-color: var(--cor-fundo-claro);
     display: flex;
-    padding: 40px;
+    padding: 10px;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
 }
-
 .cards__article{
     margin: 50px;
-    width: 400px;
+    width: 25rem;
     display: flex;
     text-align: left;
     flex-direction: column;
     gap: 20px;
 }
-
 .cards__article--title{
     font-size: 1.8rem;
     line-height: 2.5rem;
     font-weight: bold;
     width: 60%;
 }
-
 .cards__article--info{
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 400;
 }
+
 .facamais__div{
     color: var(--cor-da-fonte);
     display: flex;
@@ -217,7 +218,6 @@ strong{
     justify-content: center;
     padding: 30px;
 }
-
 .facamais__title{
     color: var(--cor-da-fonte);
     font-weight: 600;
@@ -225,7 +225,6 @@ strong{
     line-height: 5rem;
     letter-spacing: 1px;
 }
-
 .facamais__text{
     color: var(--cor-da-fonte);
     font-size: 1.2rem;
@@ -241,45 +240,54 @@ strong{
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
-
 .slide__div{
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    margin: 100px;
+    padding: 30px;
 }
-
 .slide__nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--cor-da-fonte);
     font-weight: 600;
     font-size: 1.2rem;
 }
-
 .slide__content{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+li:checked{
+    background-color: red;
+}
+
 .content__info{
-    width: 500px;
-    
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    line-height: 1.5rem;
+    gap: 50px;
 }
 
 .content__title{
-    font-weight: 600;
-    font-size: 2.3rem;
-    line-height: 1.5;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 18.75rem;
+    color: var(--cor-da-fonte);
 }
 
-.content__txt{
-
+.content__text{
+    color: var(--cor-da-fonte);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-top: 15px;
+    width: 25rem;
 }
 
 .content__img{
@@ -296,7 +304,7 @@ strong{
 .contaunica__div{
     display: flex;
     flex-direction: column;
-    width: 480px;
+    width: 30rem;
     align-items: flex-start;
     justify-content: center;
     margin-left: 50px;
@@ -335,7 +343,7 @@ strong{
 
 .contribuindo__div{
     display: flex;
-    width: 800px;
+    width: 50rem;
     align-items: center;
     justify-content: center;
 }
@@ -458,21 +466,19 @@ textarea{
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
 .form{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 30px;
 }
 
 .form__title{
     font-size: 3rem;
     width: 40%;
     text-align: center;
-    margin: 40px;
+    margin: 20px;
 }
 
 .form__div{
@@ -586,7 +592,6 @@ textarea{
     justify-content: flex-start;
     gap: 60px;
     font-size: 1.2rem;
-    
 }
 
 .footer__div{
@@ -606,4 +611,52 @@ li:hover{
 }
 #logo__footer{
     font-size: 1.5rem;
+}
+
+.tabs {
+    display: flex;
+  }
+  
+  .tab {
+    flex: 1;
+  }
+  
+  .tab input[type="radio"] {
+    display: none;
+  }
+  
+  .tab label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+  
+  .tab label:hover {
+    background-color: darkgray;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .tab input[type="radio"]:checked ~ .tab-content {
+    display: block;
+  }
+
+@media screen and (max-width: 1130px){
+
+    .nav__list{
+        display: none;
+    }
+
+    nav button{
+        display: block;
+    }
+    
+    .banner{
+        flex-direction: column;
+    }
 }

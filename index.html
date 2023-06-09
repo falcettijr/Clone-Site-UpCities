@@ -4,78 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-fQpCeaTXG2KVuXbWSLf2w9r7m+rZlQ+IDh4/oOsVMJkaL5Jw05AL1qTm6JMi8PzVracE25l5JmdyMb++nlUvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>UpCities</title>
   </head>
   <body>
-
     <!-- HEADER -->
+    <div class="menu" id="menu">
+      <button id="close"><i class="fa-solid fa-x"></i></button>
+    </div>
+    <nav class="nav">
+      <a href="#home" class="nav__logo"
+        ><img src="./assets/logo.svg" alt=""
+      /></a>
+      <ul class="nav__list">
+        <li class="nav__list--item">
+          <a href="#beneficios">Benefícios</a>
+        </li>
+        <li class="nav__list--item">
+          <a href="#servicos">Serviços</a>
+        </li>
+        <li class="nav__list--item">
+          <a href="#clientes">Clientes</a>
+        </li>
+        <a href="#form" class="nav__list--btn">Quero na minha cidade</a>
+      </ul>
+      <button type="button" id="button">
+        <img src="./assets/menu.svg" alt="" />
+      </button>
+    </nav>
 
-      <nav class="nav">
-        <h1 class="nav__logo">UpCities</h1>
-        <ul class="nav__list">
-          <li class="nav__list--item">
-            <a href="#beneficios">Benefícios</a>
-          </li>
-          <li class="nav__list--item">
-            <a href="#servicos">Serviços</a>
-          </li>
-          <li class="nav__list--item">
-            <a href="#clientes">Clientes</a>
-          </li>      
-          <a href="#form" class="nav__list--btn">Quero na minha cidade</a>  
-        </ul>
-      </nav>
+    <main class="home" id="home">
+      <section class="banner">
+        <div class="banner__text">
+          <h1 class="banner__text__title">
+            Inovação e praticidade para sua cidade
+          </h1>
+          <p class="banner__text__info">
+            O UpCities é um serviço completo que facilita o acesso do cidadão
+            aos serviços públicos e transforma a cidade através da inovação,
+            praticidade e tecnologia.
+          </p>
+          <a href="#form" class="banner__text__btn">Quero Contratar</a>
+        </div>
+        <img class="banner__img" src="./assets/mobileapp.png" alt="" />
+      </section>
 
-      <main class="home">
-        <section class="banner">
-          <div class="banner__text">
-            <h1 class="banner__text__title">Inovação e praticidade para sua cidade</h1>
-            <p class="banner__text__info">O UpCities é um serviço completo que facilita o acesso do cidadão aos serviços públicos e transforma a cidade através da inovação, praticidade e tecnologia.
-            </p>
-            <a href="#form" class="banner__text__btn">Quero Contratar</a>
-          </div>
-          <img class="banner__img" src="./assets/mobileapp.png" alt="">
-        </section>
+      <section class="banner__video">
+        <!-- <iframe
+          width="800"
+          height="450"
+          src="https://www.youtube.com/embed/b81W5d-viJ8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe> -->
+        <div class="banner__video--text">
+          <h1 class="banner__video--title">
+            Como o UpCities pode ajudar minha cidade?
+          </h1>
+          <p class="banner__video--info">
+            O UpCities é uma produto digital para cidades que querem se
+            conectar. Intuitivo e prático, que
+            <strong
+              >entrega os serviços da cidade para o cidadão, em qualquer
+              momento</strong
+            >. Feito para cidades que buscam inovação e conectividade e que
+            anseiam facilitar a vida das pessoas.
+          </p>
+        </div>
+      </section>
 
-        <section class="banner__video">
-          <iframe width="800" height="450" src="https://www.youtube.com/embed/b81W5d-viJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <div class="banner__video--text">
-            <h1 class="banner__video--title">Como o UpCities pode ajudar minha cidade?
-            </h1>
-            <p class="banner__video--info">O UpCities é uma produto digital para cidades que querem se conectar. Intuitivo e prático, que <strong>entrega os serviços da cidade para o cidadão, em qualquer momento</strong>. Feito para cidades que buscam inovação e conectividade e que anseiam facilitar a vida das pessoas.</p>
-          </div>
-        </section>
+      <section class="cards" id="beneficios">
+        <article class="cards__article">
+          <h3 class="cards__article--title">Serviços com Conta Única</h3>
+          <p class="cards__article--info">
+            Disponibilize todos os serviços da cidade com uma conta única. Mais
+            praticidade para o cidadão e controle para a gestão pública.
+          </p>
+        </article>
 
-        <section class="cards" id="beneficios">
-          <article class="cards__article">
-            <h3 class="cards__article--title">Serviços com Conta Única</h3>
-            <p class="cards__article--info">Disponibilize todos os serviços da cidade com uma conta única. Mais praticidade para o cidadão e controle para a gestão pública.</p>
-          </article>
+        <article class="cards__article">
+          <h3 class="cards__article--title">Segurança para o cidadão</h3>
+          <p class="cards__article--info">
+            Dados protegidos para uma gestão pública mais eficiente, dinâmica e
+            próxima do cidadão.
+          </p>
+        </article>
 
-          <article class="cards__article">
-            <h3 class="cards__article--title">Segurança para o cidadão</h3>
-            <p class="cards__article--info">Dados protegidos para uma gestão pública mais eficiente, dinâmica e próxima do cidadão.</p>
-          </article>
+        <article class="cards__article">
+          <h3 class="cards__article--title">Escalabilidade de Serviços</h3>
+          <p class="cards__article--info">
+            Uma plataforma completa e adaptável para cidades com diferentes
+            tamanhos e quantidade de serviços.
+          </p>
+        </article>
 
-          <article class="cards__article">
-            <h3 class="cards__article--title">Escalabilidade de Serviços</h3>
-            <p class="cards__article--info">Uma plataforma completa e adaptável para cidades com diferentes tamanhos e quantidade de serviços.</p>
-          </article>
-
-          <article class="cards__article">
-            <h3 class="cards__article--title">Comunicação rápida e direta com o cidadão</h3>
-            <p class="cards__article--info">Aplicativo municipal para conectar a prefeitura com o cidadão. Um canal direto para avisos e notificações.</p>
-          </article>
-  
-        </section>
+        <article class="cards__article">
+          <h3 class="cards__article--title">
+            Comunicação rápida e direta com o cidadão
+          </h3>
+          <p class="cards__article--info">
+            Aplicativo municipal para conectar a prefeitura com o cidadão. Um
+            canal direto para avisos e notificações.
+          </p>
+        </article>
+      </section>
 
       <section class="facamais" id="servicos">
         <div class="facamais__div">
           <h1 class="facamais__title">Faça mais com o UpCities</h1>
-          <p class="facamais__text">Uma plataforma completa, seja por aplicativo ou desktop, tudo personalizado para atender sua cidade.</p>
+          <p class="facamais__text">
+            Uma plataforma completa, seja por aplicativo ou desktop, tudo
+            personalizado para atender sua cidade.
+          </p>
         </div>
       </section>
 
@@ -92,20 +136,25 @@
           </ul>
           <div class="slide__content">
             <div class="content__info">
-              <h3 class="content__title">Agendamento de serviços e consultas
+              <h3 class="content__title">
+                Agendamento de serviços e consultas
               </h3>
-              <p class="content__text">Evite filas e melhore a eficiência dos agendamentos da sua cidade, web e app. Disponibilize agendamentos para diversos serviços da cidade, como: vaga de emprego, vacina, IPTU, RG, Obras, Procon, Aluguel de Quadras e muito mais.
+              <p class="content__text">
+                Evite filas e melhore a eficiência dos agendamentos da sua
+                cidade, web e app. Disponibilize agendamentos para diversos
+                serviços da cidade, como: vaga de emprego, vacina, IPTU, RG,
+                Obras, Procon, Aluguel de Quadras e muito mais.
               </p>
             </div>
-            <img class="content__img" src="./assets/agendamento.png" alt="">
+            <img class="content__img" src="./assets/agendamento.png" alt="" />
+            <!-- <div class="content__info">
+              <h3 class="content__title">Central de Serviços
+              </h3>
+              <p class="content__text">Área para abertura de solicitações de serviços de forma mais rápida, prática e transparente. Crie dentro da plataforma todos os serviços da prefeitura em poucos passos. Uma garantia da conformidade com a Lei nº13.460.
+              </p>
+            </div>
+            <img class="content__img" src="/assets/procon.png" alt=""> -->
             <!-- <div>
-              <h3>Central de Serviços
-              </h3>
-              <p>Área para abertura de solicitações de serviços de forma mais rápida, prática e transparente. Crie dentro da plataforma todos os serviços da prefeitura em poucos passos. Uma garantia da conformidade com a Lei nº13.460.
-              </p>
-            </div>
-            <img class="content__img" src="" alt="">
-            <div>
               <h3>Procon</h3>
               <p>Disponibilize todo o serviço do Procon pela web ou app, desde abertura e acompanhamento de reclamações, pesquisa de preço, agendamento de atendimento presencial/online a consulta do Código do Consumidor.
               </p>
@@ -144,153 +193,189 @@
       </section>
 
       <section class="contaunica">
-        <img class="contaunica__img" src="./assets/img-contaunica.png" alt="">
+        <img class="contaunica__img" src="./assets/img-contaunica.png" alt="" />
         <div class="contaunica__div">
-          <h1 class="contaunica__title">Conta Única
-          </h1>
-          <p class="contaunica__text">Armazene e centralize os dados dos cidadãos. Com um único cadastro, a pessoa tem acesso a todos os serviçoes de sua prefeitura. Controle e administre os dados por meio de um painel web.</p>
+          <h1 class="contaunica__title">Conta Única</h1>
+          <p class="contaunica__text">
+            Armazene e centralize os dados dos cidadãos. Com um único cadastro,
+            a pessoa tem acesso a todos os serviçoes de sua prefeitura. Controle
+            e administre os dados por meio de um painel web.
+          </p>
         </div>
       </section>
       <section class="contribuindo">
         <div class="contribuindo__div">
-          <h1 class="contribuindo__title">Contribuindo com cidades de todos os cantos do país.
+          <h1 class="contribuindo__title">
+            Contribuindo com cidades de todos os cantos do país.
           </h1>
         </div>
       </section>
       <section class="logos" id="clientes">
         <div class="logos-container">
           <span>
-            <div class="logo"><img src="./assets/vilavelha.png" alt="Logo 1"></div>
-            <div class="logo"><img src="./assets/presidentekennedy.png" alt="Logo 2"></div>
-            <div class="logo"><img src="./assets/piuma.png" alt="Logo 3"></div>
-            <div class="logo"><img src="./assets/aracruz.png" alt="Logo 4"></div>
-            <div class="logo"><img src="./assets/cariacica.png" alt="Logo 5"></div>
-            <div class="logo"><img src="./assets/vitoria.png" alt="Logo 6"></div>
-            <div class="logo"><img src="./assets/portoreal.png" alt="Logo 7"></div>
-            <div class="logo"><img src="./assets/serra.png" alt="Logo 8"></div>
-            <div class="logo"><img src="./assets/vilavelha.png" alt="Logo 1"></div>
+            <div class="logo">
+              <img src="./assets/vilavelha.png" alt="Logo 1" />
+            </div>
+            <div class="logo">
+              <img src="./assets/presidentekennedy.png" alt="Logo 2" />
+            </div>
+            <div class="logo">
+              <img src="./assets/piuma.png" alt="Logo 3" />
+            </div>
+            <div class="logo">
+              <img src="./assets/aracruz.png" alt="Logo 4" />
+            </div>
+            <div class="logo">
+              <img src="./assets/cariacica.png" alt="Logo 5" />
+            </div>
+            <div class="logo">
+              <img src="./assets/vitoria.png" alt="Logo 6" />
+            </div>
+            <div class="logo">
+              <img src="./assets/portoreal.png" alt="Logo 7" />
+            </div>
+            <div class="logo">
+              <img src="./assets/serra.png" alt="Logo 8" />
+            </div>
+            <div class="logo">
+              <img src="./assets/vilavelha.png" alt="Logo 1" />
+            </div>
           </span>
           <span>
-            <div class="logo"><img src="./assets/presidentekennedy.png" alt="Logo 2"></div>
-            <div class="logo"><img src="./assets/piuma.png" alt="Logo 3"></div>
-            <div class="logo"><img src="./assets/aracruz.png" alt="Logo 4"></div>
-            <div class="logo"><img src="./assets/cariacica.png" alt="Logo 5"></div>
-            <div class="logo"><img src="./assets/vitoria.png" alt="Logo 6"></div>
-            <div class="logo"><img src="./assets/portoreal.png" alt="Logo 7"></div>
-            <div class="logo"><img src="./assets/serra.png" alt="Logo 8"></div>
+            <div class="logo">
+              <img src="./assets/presidentekennedy.png" alt="Logo 2" />
+            </div>
+            <div class="logo">
+              <img src="./assets/piuma.png" alt="Logo 3" />
+            </div>
+            <div class="logo">
+              <img src="./assets/aracruz.png" alt="Logo 4" />
+            </div>
+            <div class="logo">
+              <img src="./assets/cariacica.png" alt="Logo 5" />
+            </div>
+            <div class="logo">
+              <img src="./assets/vitoria.png" alt="Logo 6" />
+            </div>
+            <div class="logo">
+              <img src="./assets/portoreal.png" alt="Logo 7" />
+            </div>
+            <div class="logo">
+              <img src="./assets/serra.png" alt="Logo 8" />
+            </div>
           </span>
         </div>
-        
       </section>
       <section class="numeros">
         <div class="numeros__div">
           <div class="numeros__div--card">
-            <h1 class="numeros__div--title">238 mil
-            </h1>
-            <p class="numeros__div--text">downloads
-            </p>
+            <h1 class="numeros__div--title">238 mil</h1>
+            <p class="numeros__div--text">downloads</p>
           </div>
           <div class="numeros__div--card">
-            <h1 class="numeros__div--title">542 mil
-            </h1>
-            <p class="numeros__div--text">usuários cadastrados
-            </p>
+            <h1 class="numeros__div--title">542 mil</h1>
+            <p class="numeros__div--text">usuários cadastrados</p>
           </div>
           <div class="numeros__div--card">
-            <h1 class="numeros__div--title">3 milhões
-            </h1>
-            <p class="numeros__div--text">serviços realizados
-            </p>
+            <h1 class="numeros__div--title">3 milhões</h1>
+            <p class="numeros__div--text">serviços realizados</p>
           </div>
         </div>
       </section>
 
       <section id="impulsione" class="banner">
         <div class="banner__text">
-          <h1 id="impulsione__title" class="banner__text__title">Impulsione o desenvolvimento da sua cidade com a tecnologia
+          <h1 id="impulsione__title" class="banner__text__title">
+            Impulsione o desenvolvimento da sua cidade com a tecnologia
           </h1>
-          <p class="banner__text__info">Contribua para uma cidade criativa e sustentável, utilizando a tecnologia de modo estratégico para incluir a participação dos cidadãos.
+          <p class="banner__text__info">
+            Contribua para uma cidade criativa e sustentável, utilizando a
+            tecnologia de modo estratégico para incluir a participação dos
+            cidadãos.
           </p>
           <a href="#form" class="banner__text__btn">Quero Contratar</a>
         </div>
-        <img id="impulsione__img" class="banner__img" src="./assets/impulsione.png" alt="">
+        <img
+          id="impulsione__img"
+          class="banner__img"
+          src="./assets/impulsione.png"
+          alt=""
+        />
       </section>
-
-      </main>
-      <section class="form" id="form">
-        <div class="form__div">
-          <h1 class="form__title">Preencha o formulário e tenha o UpCities na sua Cidade
-          </h1>
-          <form class="form__body" action="">
-            <div class="form__inputgroup1">
-              <div class="nomecompleto">
-                <label for="nome  ">Nome Completo*</label>
-                <input type="text" name="nome" id="nome" required>
-              </div>
-              <div class="email"> 
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email" required>
-              </div>
-              <div class="telefone">
-                <label for="tel">Telefone*</label>
-                <input type="tel" name="" id="telefone" required>
-              </div>
+    </main>
+    <section class="form" id="form">
+      <div class="form__div">
+        <h1 class="form__title">
+          Preencha o formulário e tenha o UpCities na sua Cidade
+        </h1>
+        <form class="form__body" action="">
+          <div class="form__inputgroup1">
+            <div class="nomecompleto">
+              <label for="nome  ">Nome Completo*</label>
+              <input type="text" name="nome" id="nome" required />
             </div>
-            <div class="form__inputgroup2">
-              <div class="cidadeestado">
-                <select class="estado">
-                  <option value="" selected disabled hidden>UF</option>
-                  <option value="AC">AC</option>
-                  <option value="AL">AL</option>
-                  <option value="AP">AP</option>
-                  <option value="AM">AM</option>
-                  <option value="BA">BA</option>
-                  <option value="CE">CE</option>
-                  <option value="DF">DF</option>
-                  <option value="ES">ES</option>
-                  <option value="GO">GO</option>
-                  <option value="MA">MA</option>
-                  <option value="MT">MT</option>
-                  <option value="MS">MS</option>
-                  <option value="MG">MG</option>
-                  <option value="PA">PA</option>
-                  <option value="PB">PB</option>
-                  <option value="PR">PR</option>
-                  <option value="PE">PE</option>
-                  <option value="PI">PI</option>
-                  <option value="RJ">RJ</option>
-                  <option value="RN">RN</option>
-                  <option value="RS">RS</option>
-                  <option value="RO">RO</option>
-                  <option value="RR">RR</option>
-                  <option value="SC">SC</option>
-                  <option value="SP">SP</option>
-                  <option value="SE">SE</option>
-                  <option value="TO">TO</option>
-                </select>
-                <label for="cidade">Cidade</label>
-                <input type="text" name="cidade" id="cidade">
-              </div>
-              <label for="msg">Escreva sua mensagem</label>
-              <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-              <button class="enviar">Enviar Formulário</button>
+            <div class="email">
+              <label for="email">Email*</label>
+              <input type="email" name="email" id="email" required />
             </div>
-          </form>
-        </div>
-      </section>
-      <section class="footer">
-        <div class="footer__div">
-          <ul class="footer__list">
-            <li id="logo__footer" class="footer__list--item">UpCities</li>
-            <li class="footer__list--item">Serviços</li>
-            <li class="footer__list--item">Benefícios</li>
-            <li class="footer__list--item">Clientes</li>
-          </ul>
-        </div>
-        <div class="footer__zap">
-          Dúvidas estamos no Whatsapp!
-        </div>
-      </section>
-      <script src="https://kit.fontawesome.com/14be60bb86.js" crossorigin="anonymous"></script>
+            <div class="telefone">
+              <label for="tel">Telefone*</label>
+              <input type="tel" name="" id="telefone" required />
+            </div>
+          </div>
+          <div class="form__inputgroup2">
+            <div class="cidadeestado">
+              <select class="estado">
+                <option value="" selected disabled hidden>UF</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+              <label for="cidade">Cidade</label>
+              <input type="text" name="cidade" id="cidade" />
+            </div>
+            <label for="msg">Escreva sua mensagem</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <button class="enviar">Enviar Formulário</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__div">
+        <ul class="footer__list">
+          <li id="logo__footer" class="footer__list--item">UpCities</li>
+          <li class="footer__list--item">Serviços</li>
+          <li class="footer__list--item">Benefícios</li>
+          <li class="footer__list--item">Clientes</li>
+        </ul>
+      </div>
+      <div class="footer__zap">Dúvidas estamos no Whatsapp!</div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
