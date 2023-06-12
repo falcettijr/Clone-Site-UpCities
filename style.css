@@ -128,13 +128,12 @@ a:visited{
     text-align: left;
     gap:30px;
     width: 30rem;
-   
 }
 .banner__text__title{
     color: var(--cor-da-fonte);
     font-weight: 600;
     font-size: 3.5rem;
-    line-height: 5rem;
+        
     letter-spacing: 1px;
 }
 .banner__text__info{
@@ -224,6 +223,7 @@ strong{
     font-size: 2.9rem;
     line-height: 5rem;
     letter-spacing: 1px;
+    text-align: left;
 }
 .facamais__text{
     color: var(--cor-da-fonte);
@@ -660,6 +660,20 @@ li:hover{
         flex-direction: column;
     }
 
+    .banner__text{
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .banner__text__title{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .banner__img{
+        max-width: 100%;
+        height: auto;
+    }
     .banner__video{
         flex-direction: column-reverse;
         align-items: center;
@@ -670,5 +684,9 @@ li:hover{
         align-items: center;
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+    .facamais__text{
+        
     }
 }
