@@ -32,10 +32,13 @@ body{
     z-index: 1;
     transition: all .4s;
 }
-.menu #close{
-    background: none;
+
+.menu button{
     border: none;
-    color: white;
+    background: transparent;
+    color: #fff;
+    padding: 20px;
+    
 }
 
 /* ----BARRA DE NAVEGAÇÃO---- */
@@ -56,6 +59,7 @@ nav button{
     border: none;
     background: transparent;
 }
+
 a:visited{
     text-decoration: var(--cor-da-fonte);
 }
