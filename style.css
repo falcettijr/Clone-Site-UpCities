@@ -16,14 +16,12 @@
     text-decoration: none; 
     scroll-behavior: smooth;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--cor-de-fundo);
     color: var(--cor-da-fonte);
    
 }
-    
 .menu{
     background-color: var(--cor-principal);
     position: fixed;
@@ -34,6 +32,13 @@ body{
     z-index: 1;
     transition: all .4s;
 }
+.menu #close{
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* ----BARRA DE NAVEGAÇÃO---- */
 
 nav{
     display: flex;
@@ -46,17 +51,14 @@ nav{
     left: 0;
     width: 100%;
 }
-
 nav button{
     display: none;
     border: none;
     background: transparent;
 }
-
 a:visited{
     text-decoration: var(--cor-da-fonte);
 }
-
 .nav__list{
     display: flex;
     gap: 50px;   
@@ -107,6 +109,8 @@ a:visited{
     color:var(--cor-principal);
 }
 
+/* ----BANNER---- */
+
 .banner{
     display: flex;
     align-items: center;
@@ -114,7 +118,6 @@ a:visited{
     margin-top: 6.25rem;
     width: 100%;
 }
-
 .banner__text{
     display: flex;
     flex-direction: column;
@@ -123,7 +126,6 @@ a:visited{
     width: 30rem;
    
 }
-
 .banner__text__title{
     color: var(--cor-da-fonte);
     font-weight: 600;
@@ -131,12 +133,10 @@ a:visited{
     line-height: 5rem;
     letter-spacing: 1px;
 }
-
 .banner__text__info{
     line-height: 2rem;
     font-size: 1.2rem;
 }
-
 .banner__text__btn{
     text-align: left;
     color: var(--cor-principal);
@@ -145,18 +145,15 @@ a:visited{
     font-weight: 400;
     font-size: 1.3rem;;
 }
-
 .banner__img{
     max-width:31.25rem;
 }
-
 .banner__video{
     display: flex;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
 }
-
 .banner__video--text{
     display: flex;
     flex-direction: column;
@@ -164,14 +161,12 @@ a:visited{
     margin-left: 5%;
     gap: 30px;
 }
-
 .banner__video--title{
     font-weight: 600;
    font-size: 3rem;
    line-height: 3.5rem;
    letter-spacing: 1px;
 }
-
 .banner__video--info{
     line-height: 1.5rem;
     font-size: 1.2rem;
