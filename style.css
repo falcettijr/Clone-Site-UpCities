@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 :root {
   --cor-de-fundo: white;
   --cor-da-fonte: #3a3a3a;
@@ -17,7 +16,7 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family:'Nunito Sans', sans-serif;
   background-color: var(--cor-de-fundo);
   color: var(--cor-da-fonte);
   max-width: 1400px;
@@ -120,7 +119,10 @@ a:visited {
   font-weight: 500;
   color: var(--cor-principal);
 }
-
+a img{
+  width: 150%;
+  height: 150%;
+}
 /* ----BANNER---- */
 
 .banner {
@@ -140,13 +142,14 @@ a:visited {
 }
 .banner__text__title {
   color: var(--cor-da-fonte);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.5rem;
-  line-height: 150%;
+  line-height: 5rem;
 }
 .banner__text__info {
   line-height: 150%;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
 }
 .banner__text__btn {
   text-align: left;
@@ -242,16 +245,15 @@ strong {
   color: var(--cor-da-fonte);
   font-weight: 600;
   font-size: 2.9rem;
-  line-height: 5rem;
-  letter-spacing: 1px;
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 .facamais__text {
   color: var(--cor-da-fonte);
   font-size: 1.2rem;
   line-height: 1.5rem;
   font-weight: 400;
-  width: 30%;
+  width: 100%;
   text-align: center;
   margin-top: 15px;
 }
@@ -317,6 +319,7 @@ li:checked {
   align-items: center;
   margin-top: 50px;
 }
+/*------CONTA UNICA-----*/
 
 .contaunica__div {
   display: flex;
@@ -334,13 +337,11 @@ li:checked {
   color: var(--cor-da-fonte);
   font-weight: 600;
   font-size: 2.9rem;
-  line-height: 5rem;
-  letter-spacing: 1px;
+ 
 }
 .contaunica__text {
   color: var(--cor-da-fonte);
   font-size: 1.2rem;
-  line-height: 1.5rem;
   font-weight: 400;
   width: 100%;
   margin-top: 15px;
