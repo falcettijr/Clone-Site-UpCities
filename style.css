@@ -138,7 +138,6 @@ a img{
   text-align: left;
   width: 45%;
   margin-right: 5%;
-
 }
 .banner__text__title {
   color: var(--cor-da-fonte);
@@ -236,10 +235,8 @@ strong {
 .facamais__div {
   color: var(--cor-da-fonte);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
 }
 .facamais__title {
   color: var(--cor-da-fonte);
@@ -324,27 +321,25 @@ li:checked {
 .contaunica__div {
   display: flex;
   flex-direction: column;
-  width: 30rem;
-  align-items: flex-start;
-  justify-content: center;
-  margin-left: 50px;
+  width: 45%;
+  margin-left: 5%;
   text-align: left;
 }
-.contaunica__img {
-  max-width: 42rem;
+.contaunica__img img {
+  width:40rem;
+  max-width:100%;
 }
 .contaunica__title {
   color: var(--cor-da-fonte);
-  font-weight: 600;
-  font-size: 2.9rem;
- 
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 .contaunica__text {
   color: var(--cor-da-fonte);
   font-size: 1.2rem;
   font-weight: 400;
   width: 100%;
-  margin-top: 15px;
 }
 
 .contribuindo {
@@ -700,6 +695,25 @@ li:hover {
   .banner__video--info{
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .contaunica__div {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .contaunica__img {
+    max-width: 100%;
+  }
+  .contaunica__title {
+    width: 100%;
+  }
+  .contaunica__text {
+    color: var(--cor-da-fonte);
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
   }
 
   iframe{
