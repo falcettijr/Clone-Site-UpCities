@@ -20,7 +20,16 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--cor-de-fundo);
   color: var(--cor-da-fonte);
+  max-width: 1400px;
+  margin: 0 auto;
 }
+main{
+  
+}
+section{
+  padding: 0 8%;
+}
+
 .menu {
   background-color: var(--cor-principal);
   position: fixed;
@@ -45,12 +54,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8%;
+  padding: 1rem 20%;
   background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
+  
 }
 nav button {
   display: none;
@@ -117,24 +128,24 @@ a:visited {
   align-items: center;
   justify-content: center;
   margin-top: 6.25rem;
-  width: 100%;
+  width: 100%; 
 }
 .banner__text {
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 30px;
-  width: 30rem;
+  width: 45%;
+  margin-right: 5%;
+
 }
 .banner__text__title {
   color: var(--cor-da-fonte);
   font-weight: 600;
   font-size: 3.5rem;
-
-  letter-spacing: 1px;
+  line-height: 150%;
 }
 .banner__text__info {
-  line-height: 2rem;
+  line-height: 150%;
   font-size: 1.2rem;
 }
 .banner__text__btn {
@@ -146,29 +157,40 @@ a:visited {
   font-size: 1.3rem;
 }
 .banner__img {
-  max-width: 31.25rem;
+  width: 45%;
+  margin-left: 5%;
+ 
 }
+.banner__img img{
+  width:31.25rem;
+  max-width:100%;
+}
+
+/* ----BANNER VIDEO---- */
+
 .banner__video {
   display: flex;
   margin-top: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width:100%;
+}
+.banner__video--video{
+  margin-right: 5%;
 }
 .banner__video--text {
   display: flex;
   flex-direction: column;
-  width: 25rem;
-  margin-left: 5%;
-  gap: 30px;
+  
 }
 .banner__video--title {
+  color: var(--cor-da-fonte);
   font-weight: 600;
   font-size: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: 1px;
+  line-height: 150%;
 }
 .banner__video--info {
-  line-height: 1.5rem;
+  line-height: 150%;
   font-size: 1.2rem;
 }
 
@@ -644,6 +666,7 @@ li:hover {
   .banner__text {
     font-size: 1rem;
     margin: 0 10px;
+    width: 100%;
   }
 
   .banner__text__title {
@@ -651,22 +674,42 @@ li:hover {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+
   .banner__img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+  }
+  .banner__img img{
+    width:100%
   }
   .banner__video {
     flex-direction: column-reverse;
     align-items: center;
   }
+  .banner__video--video{
+    width: 100%;
+    margin: 0;
+  }
 
+  .banner__video--title{
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .banner__video--info{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  iframe{
+    width: 100%;
+  }
   .cards {
     flex-direction: column;
     align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
   .facamais__text {
   }
 }
