@@ -161,7 +161,6 @@ a img{
 .banner__img {
   width: 45%;
   margin-left: 5%;
- 
 }
 .banner__img img{
   width:31.25rem;
@@ -208,7 +207,6 @@ strong {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 10px;
-  gap: 10px;
   background-color: var(--cor-fundo-claro);
 }
 .cards__article {
@@ -232,9 +230,11 @@ strong {
 }
 
 /*------FACA MAIS-----*/
+
 .facamais__div {
   color: var(--cor-da-fonte);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -357,12 +357,13 @@ li:checked {
   justify-content: center;
 }
 .contribuindo__title {
-  color: var(--cor-da-fonte);
-  font-weight: 600;
-  font-size: 3.8rem;
-  line-height: 5rem;
-  letter-spacing: 1px;
+  width: 100%;
   text-align: center;
+  color: #3a3a3a;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin: auto;
 }
 
 .logos-container {
@@ -697,16 +698,31 @@ li:hover {
     margin-bottom: 1rem;
   }
 
+  .cards{
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .facamais__div{
+    flex-direction: column;
+  }
+  .contaunica{
+    flex-direction: column-reverse;
+  }
+
   .contaunica__div {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
   }
   .contaunica__img {
     max-width: 100%;
   }
   .contaunica__title {
     width: 100%;
+    font-size: 1.875rem;
+    font-weight: 700;
   }
   .contaunica__text {
     color: var(--cor-da-fonte);
@@ -725,6 +741,9 @@ li:hover {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .facamais__text {
+  
+
+  .numeros__div{
+    flex-direction: column;
   }
 }
