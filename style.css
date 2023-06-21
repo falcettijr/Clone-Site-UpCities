@@ -237,6 +237,7 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .facamais__title {
   color: var(--cor-da-fonte);
