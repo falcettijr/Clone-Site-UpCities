@@ -45,6 +45,15 @@ section{
   background: transparent;
   color: #fff;
   padding: 20px;
+  color: white;
+}
+
+.menu li {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  color: white;
 }
 
 /* ----BARRA DE NAVEGAÇÃO---- */
@@ -59,8 +68,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-
-  
+ 
 }
 nav button {
   display: none;
@@ -479,9 +487,7 @@ textarea {
 
 .form__title {
   font-size: 3rem;
-  width: 40%;
   text-align: center;
-  margin: 20px;
 }
 
 .form__div {
@@ -489,7 +495,6 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
   padding: 50px;
 }
 
@@ -498,7 +503,6 @@ textarea {
   align-items: center;
   justify-content: center;
   color: var(--cor-da-fonte);
-  width: 100%;
   font-weight: 300;
   font-size: 1.3rem;
 }
@@ -510,6 +514,7 @@ textarea {
   margin: 30px;
   text-align: left;
 }
+
 .cidadeestado {
   display: inline;
   margin-top: 60px;
@@ -534,6 +539,7 @@ textarea {
   align-self: flex-end;
   text-align: center;
 }
+
 .nomecompleto {
   display: flex;
   flex-direction: column;
@@ -611,6 +617,7 @@ li:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 #logo__footer {
   font-size: 1.5rem;
 }
@@ -647,6 +654,8 @@ li:hover {
 .tab input[type="radio"]:checked ~ .tab-content {
   display: block;
 }
+
+/* MEDIA SCREEN */
 
 @media screen and (max-width: 1130px) {
   .nav__list {
@@ -743,8 +752,32 @@ li:hover {
     margin-bottom: 0px;
   }
   
-
   .numeros__div{
     flex-direction: column;
+  }
+
+  .form__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-da-fonte);
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+  .form__inputgroup1 .form__inputgroup2{
+    width: 100%;
+    align-items: center;
+  }
+
+  .enviar button{
+    width: 100%;
   }
 }
